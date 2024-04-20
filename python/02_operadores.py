@@ -361,11 +361,95 @@ print(f"NOT: ~10 = {~10}") # ~1010 = -11 porque ~1010 = -11 y -11 = -11
 print(f"Desplazamiento a la izquierda: 10 << 1 = {10 << 1}") # 1010 << 1 = 10100 porque 1010 << 1 = 10100 y 10100 = 20
 print(f"Desplazamiento a la derecha: 10 >> 1 = {10 >> 1}") # 1010 >> 1 = 101 porque 1010 >> 1 = 101 y 101 = 5
 
+# Estructuras de control
 
 
+# Condicionales
+# Sirve para tomar decisiones en un programa si se cumple una condición
+my_string = "Braise"
+if my_string == "Mouredev":
+    print("Mi string es igual a Mouredev")
+elif my_string == "Braise":
+    print("Mi string es igual a Braise")
+else:
+    print("Mi string no es igual a Mouredev, ni braise")
 
-# Gracias
 
+# Iteraciones
+# Sirve para repetir un bloque de código varias veces
+
+for i in range(11):
+    print(f"Valor de i: {i}")
+
+for i in range(5):
+    print(i)
+
+i = 0
+
+while i <= 10:
+    print(f"Valor de i: {i}")
+    i += 1
+
+
+# Manejo de excepciones
+# Sirve para manejar errores en un programa
+# try sirve para intentar ejecutar un bloque de código y que nuestro programa no se detenga si hay un error
+
+try:
+    print (10 / 0)
+except:
+    print("Ha ocurrido un error")
+
+finally:
+    print("Ha finalizado el manejo de excepciones")
+
+
+try:
+    print (10 / 1)
+except:
+    print("Ha ocurrido un error")
+
+finally:
+    print("Ha finalizado el manejo de excepciones")
+
+
+# Ejercicio de operadores
+
+i = 0
+
+while i <= 55:
+    print(f"Valor de i: {i}")
+    i += 1
+
+for number in range (10, 56):
+    print (number)
+
+
+# Ejercicio con impares
+for number in range (10, 56):
+    if number % 2 != 0:
+        print (number)
+
+# Ejercicio con pares
+for number in range (10, 56):
+    if number % 2 == 0:
+        print (number)
+
+# Ejercicio con pares y una exclusión
+for number in range (10, 56):
+    if number % 2 == 0 and number != 16:
+        print (number)
+
+# Ejercicio con pares y varias exclusiones
+for number in range (10, 56):
+    if number % 2 == 0 and number != 16 and number != 20 and number != 30:
+        print (number)
+
+# Ejercicio con pares y varias exclusiones
+
+for number in range(10, 56):
+    if number % 2 == 0 and number not in [16, 24, 28]:
+        print(number)
 
 
 
