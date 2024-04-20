@@ -364,6 +364,8 @@ print(f"Desplazamiento a la derecha: 10 >> 1 = {10 >> 1}") # 1010 >> 1 = 101 por
 
 
 
+# Gracias
+
 
 
 
