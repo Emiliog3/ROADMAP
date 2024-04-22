@@ -146,3 +146,39 @@ print("Hello, World!".find("World")) # encontrar la posición de una subcadena
 print("Hello, World!".index("World")) # encontrar la posición de una subcadena
 print("Hello, World!".count("o")) # contar la cantidad de veces que aparece una subcadena
 print("Hello, World!".startswith("Hello")) # verificar si una cadena comienza con una subcadena
+
+# Variables locales y globales
+
+global_var = "Python01"
+
+print(global_var)
+
+def hello_python():
+    local_var = "Hola01"
+    print(f"Hello, {global_var}!")
+
+hello_python()
+
+# Crea una función que reciba dos parametros de tipo cadena de texto y retonre un número entero
+
+
+def print_numbers(text1, text2) -> int:
+    couunt = 0
+    for number in range(1, 51):
+        if number % 3 == 0 and number % 5 == 0: # Si el número es divisible por 3 y 5
+            print(text1 + " " + text2)
+        elif number % 3 == 0: # Si el número es divisible por 3
+            print(text1)
+        elif number % 5 == 0: # Si el número es divisible por 5
+            print(text2)
+        else:
+            print(number) # Imprime los números del 1 al 50
+            couunt += 1 # Cantidad de números que no son divisibles por 3 ni por 5
+    return couunt # Imprime la cantidad de números que no son divisibles por 3 ni por 5
+
+print_numbers("Texto100", "Texto200") # Debe imprimir los números del 1 al 50, si el número es divisible por 3 debe imprimir "Texto100", si el número es divisible por 5 debe imprimir "Texto200" y si el número es divisible por 3 y 5 debe imprimir "Texto100Texto200"
+print_numbers("Fizz", "Buzz") # Debe imprimir los números del 1 al 50, si el número es divisible por 3 debe imprimir "Fizz", si el número es divisible por 5 debe imprimir "Buzz" y si el número es divisible por 3 y 5 debe imprimir "FizzBuzz"
+print(print_numbers("Texto100", "Texto200")) # Debe retornar la cantidad de números que no son divisibles por 3 ni por 5
+print(print_numbers("Fizz", "Buzz")) # Debe retornar la cantidad de números que no son divisibles por 3 ni por 5
+
+
