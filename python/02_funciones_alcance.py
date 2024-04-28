@@ -1,3 +1,6 @@
+Aquí tienes el código corregido:
+
+```python
 # Funciones y Alcance
 # Una función es un bloque de código que solo se ejecuta cuando se llama y se puede reutilizar en cualquier parte del programa cada vez que se llame.
 
@@ -11,7 +14,7 @@ def greet():
 # Llamar a la función
 greet()
 
-# Con retonro
+# Con retorno
 
 def return_greet():
     return "Hello, Pablo!" 
@@ -31,7 +34,7 @@ arg_greet("Pablo Emilio Gómez")
 
 
 def arg_greet(name, age):
-    print(f"Hello, {name} you are {age} years old")
+    print(f"Hello, {name}, you are {age} years old")
 
 arg_greet("Pablo Emilio Gómez", 25)
 
@@ -43,10 +46,10 @@ default_greet("Python")
 default_greet()
 
 
-# Con arguentos
+# Con argumentos
 
 def return_args_greet(greet, name):
-    return f"{greet}, {name} !"
+    return f"{greet}, {name}!"
 
 print(return_args_greet("Hello", "Pablo Emilio Gómez"))
 
@@ -59,7 +62,7 @@ def return_args_greet(greet, name):
 
 print(return_args_greet("Hello", "Pablo Emilio Gómez"))
 
-# Con retonro de varios valores
+# Con retorno de varios valores
 
 def multiple_return_greet():
     return "Hello", "Pablo Emilio Gómez Gómez"
@@ -101,20 +104,20 @@ def outer_function():
 outer_function()
 
 
-# Funciones del lenguaje o building functions
+# Funciones del lenguaje o built-in functions
 
-# print len sirve para contar la cantidad de caracteres de una cadena           
+# La función len cuenta la cantidad de caracteres de una cadena           
 print(len("Hello, World!"))
-# print type sirve para saber el tipo de dato de una variable
+# La función type sirve para saber el tipo de dato de una variable
 print(type("Hello, World!"))
-# print id sirve para saber la dirección de memoria de una variable
+# La función id sirve para saber la dirección de memoria de una variable
 print(id("Hello, World!"))
-# print abs sirve para saber el valor absoluto de un número
+# La función abs sirve para saber el valor absoluto de un número
 print(abs(-1))
 print(abs(1))
 print(abs(-1.0))
 print(abs(1.0))
-# print round sirve para redondear un número
+# La función round sirve para redondear un número
 print(round(1.5))
 print(round(1.4))
 print(round(1.6))
@@ -124,26 +127,27 @@ print(round(1.666666, 1))
 print(round(1.666666, 2)) 
 print(round(1.666666, 3)) 
 print(round(1.666666, 4)) 
-print("Hello, World!".upper()) 
-print("Hello, World!".lower()) 
-print("Hello, World!".capitalize()) 
-print("Hello, World!".title()) 
-print("Hello, World!".swapcase()) 
-print("Hello, World!".replace("Hello", "Hi")) 
-print("Hello, World!".split(",")) 
-print("Hello, World!".split(" ")) 
-print("Hello, World!".split()) 
-print("   Hello, World!".strip()) 
-print("Hello  , World!  ".lstrip()) 
-print("Hello, World!".rstrip()) 
-print("Hello, World!".center(20)) 
-print("Hello, World!".ljust(20)) 
-print("Hello, World!".rjust(20)) 
-print("Hello, World!".zfill(20)) 
-print("Hello, World!".find("World")) 
-print("Hello, World!".index("World")) 
-print("Hello, World!".count("o")) 
-print("Hello, World!".startswith("Hello"))
+print("Hello, World!".upper())  # Convierte a mayúsculas
+print("Hello, World!".lower())  # Convierte a minúsculas
+print("Hello, World!".capitalize())  # Convierte la primera letra en mayúscula
+print("Hello, World!".title())  # Convierte la primera letra de cada palabra en mayúscula
+print("Hello, World!".swapcase())  # Convierte las mayúsculas en minúsculas y viceversa
+print("Hello, World!".replace("Hello", "Hi"))  # Reemplaza una cadena por otra
+print("Hello, World!".split(","))  # Divide una cadena en una lista
+print("Hello, World!".split(" "))  # Divide una cadena en una lista
+print("Hello, World!".split())  # Divide una cadena en una lista
+print("   Hello, World!".strip())  # Elimina los espacios en blanco al inicio y al final
+print("Hello  , World!  ".lstrip())  # Elimina los espacios en blanco al inicio
+print("Hello, World!".rstrip())  # Elimina los espacios en blanco al final
+print("Hello, World!".center(20))  # Centra una cadena
+print("Hello, World!".ljust(20))  # Alinea a la izquierda
+print("Hello, World!".rjust(20))  # Alinea a la derecha
+print("Hello, World!".zfill(20))  # Rellena con ceros a la izquierda
+print("Hello, World!".find("World"))  # Encuentra la posición de una cadena
+print("Hello, World!".index("World"))  # Encuentra la posición de una cadena
+print("Hello, World!".count("o"))  # Cuenta la cantidad de veces que aparece una cadena
+print("Hello, World!".startswith("Hello"))  # Verifica si una cadena inicia con otra
+
 
 # Variables locales y globales
 
@@ -153,11 +157,13 @@ print(global_var)
 
 def hello_python():
     local_var = "Hola01"
-    print(f"Hello, {global_var}!")
+    print(f"{local_var}, {global_var}!")
 
 hello_python()
 
-# Crea una función que reciba dos parametros de tipo cadena de texto y retonre un número entero
+
+
+# Crea una función que reciba dos parametros de tipo cadena de texto y retorne un número entero
 
 
 def print_numbers(text1, text2) -> int:
@@ -178,4 +184,4 @@ print_numbers("Texto100", "Texto200")
 print_numbers("Fizz", "Buzz") 
 print(print_numbers("Texto100", "Texto200")) 
 print(print_numbers("Fizz", "Buzz")) 
-
+```
