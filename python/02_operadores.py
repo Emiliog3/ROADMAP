@@ -445,6 +445,13 @@ for number in range (10, 56):
     if number % 2 == 0 and number != 16 and number != 20 and number != 30:
         print (number)
 
+
+# Ejercicio con pares y varias exclusiones
+for number in range (10, 56):
+    if number % 2 == 0 and number != 16 and number != 20 and number != 30 and number %3 != 0:
+        print (number)
+
+
 # Ejercicio con pares y varias exclusiones
 
 for number in range(10, 56):

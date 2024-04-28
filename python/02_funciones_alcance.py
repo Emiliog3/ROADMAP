@@ -13,10 +13,10 @@ greet()
 
 # Con retonro
 
-def retonr_greet():
+def return_greet():
     return "Hello, Pablo!" 
 
-print(retonr_greet())
+print(return_greet())
 
 # Con un argumento
 
@@ -72,24 +72,22 @@ print(name)
 
 def variable_arg_greet(*names):
     for name in names:
-        print(f"Hello, {name}")
+        print(f"Hello, {name}!")
 
 variable_arg_greet("Pablo", "Emilio", "Gómez", "Comunidad")      
 
 
 # Con un número variable de argumentos con palabras clave
 
-# Con un número variable de argumentos con palabras clave
-
 def variable_key_arg_greet(**names):
-    for param, name in names.items():  # Corrección aquí
+    for param, name in names.items():  
         print(f"Hello, {name} ({param})!")
 
 variable_key_arg_greet(
-    lenguaje="Python",
+    language="Python",
     name="Pablo Emilio Gómez",
-    comunidad="Comunidad",
-    age=25    
+    community="Comunidad",
+    age=32 
 )
 
 
@@ -120,32 +118,32 @@ print(abs(1.0))
 print(round(1.5))
 print(round(1.4))
 print(round(1.6))
-print(round(1.6, 1)) # redondear a un decimal. Por ejemplo, 1.6 redondeado a 1 decimal es 1.6
-print(round(1.6, 0)) # redondear a un entero. Por ejemplo, 1.6 redondeado a 0 decimales es 2
-print(round(1.666666, 1)) # redondear a un decimal. Por ejemplo, 1.666666 redondeado a 1 decimal es 1.7
-print(round(1.666666, 2)) # redondear a dos decimales. Por ejemplo, 1.666666 redondeado a 2 decimales es 1.67
-print(round(1.666666, 3)) # redondear a tres decimales. Por ejemplo, 1.666666 redondeado a 3 decimales es 1.667
-print(round(1.666666, 4)) # redondear a cuatro decimales. Por ejemplo, 1.666666 redondeado a 4 decimales es 1.6667
-print("Hello, World!".upper()) # convertir a mayúsculas
-print("Hello, World!".lower()) # convertir a minúsculas
-print("Hello, World!".capitalize()) # convertir la primera letra a mayúscula
-print("Hello, World!".title()) # convertir la primera letra de cada palabra a mayúscula
-print("Hello, World!".swapcase()) # convertir mayúsculas en minúsculas y viceversa
-print("Hello, World!".replace("Hello", "Hi")) # reemplazar una cadena por otra
-print("Hello, World!".split(",")) # dividir una cadena en una lista de cadenas
-print("Hello, World!".split(" ")) # dividir una cadena en una lista de cadenas
-print("Hello, World!".split()) # dividir una cadena en una lista de cadenas
-print("   Hello, World!".strip()) # eliminar espacios en blanco al principio y al final
-print("Hello  , World!  ".lstrip()) # eliminar espacios en blanco al principio
-print("Hello, World!".rstrip()) # eliminar espacios en blanco al final
-print("Hello, World!".center(20)) # centrar una cadena
-print("Hello, World!".ljust(20)) # alinear a la izquierda una cadena
-print("Hello, World!".rjust(20)) # alinear a la derecha una cadena
-print("Hello, World!".zfill(20)) # rellenar con ceros a la izquierda una cadena
-print("Hello, World!".find("World")) # encontrar la posición de una subcadena
-print("Hello, World!".index("World")) # encontrar la posición de una subcadena
-print("Hello, World!".count("o")) # contar la cantidad de veces que aparece una subcadena
-print("Hello, World!".startswith("Hello")) # verificar si una cadena comienza con una subcadena
+print(round(1.6, 1)) 
+print(round(1.6, 0)) 
+print(round(1.666666, 1)) 
+print(round(1.666666, 2)) 
+print(round(1.666666, 3)) 
+print(round(1.666666, 4)) 
+print("Hello, World!".upper()) 
+print("Hello, World!".lower()) 
+print("Hello, World!".capitalize()) 
+print("Hello, World!".title()) 
+print("Hello, World!".swapcase()) 
+print("Hello, World!".replace("Hello", "Hi")) 
+print("Hello, World!".split(",")) 
+print("Hello, World!".split(" ")) 
+print("Hello, World!".split()) 
+print("   Hello, World!".strip()) 
+print("Hello  , World!  ".lstrip()) 
+print("Hello, World!".rstrip()) 
+print("Hello, World!".center(20)) 
+print("Hello, World!".ljust(20)) 
+print("Hello, World!".rjust(20)) 
+print("Hello, World!".zfill(20)) 
+print("Hello, World!".find("World")) 
+print("Hello, World!".index("World")) 
+print("Hello, World!".count("o")) 
+print("Hello, World!".startswith("Hello"))
 
 # Variables locales y globales
 
@@ -163,22 +161,21 @@ hello_python()
 
 
 def print_numbers(text1, text2) -> int:
-    couunt = 0
+    count = 0
     for number in range(1, 51):
-        if number % 3 == 0 and number % 5 == 0: # Si el número es divisible por 3 y 5
+        if number % 3 == 0 and number % 5 == 0: 
             print(text1 + " " + text2)
-        elif number % 3 == 0: # Si el número es divisible por 3
+        elif number % 3 == 0: 
             print(text1)
-        elif number % 5 == 0: # Si el número es divisible por 5
+        elif number % 5 == 0: 
             print(text2)
         else:
-            print(number) # Imprime los números del 1 al 50
-            couunt += 1 # Cantidad de números que no son divisibles por 3 ni por 5
-    return couunt # Imprime la cantidad de números que no son divisibles por 3 ni por 5
+            print(number) 
+            count += 1 
+    return count 
 
-print_numbers("Texto100", "Texto200") # Debe imprimir los números del 1 al 50, si el número es divisible por 3 debe imprimir "Texto100", si el número es divisible por 5 debe imprimir "Texto200" y si el número es divisible por 3 y 5 debe imprimir "Texto100Texto200"
-print_numbers("Fizz", "Buzz") # Debe imprimir los números del 1 al 50, si el número es divisible por 3 debe imprimir "Fizz", si el número es divisible por 5 debe imprimir "Buzz" y si el número es divisible por 3 y 5 debe imprimir "FizzBuzz"
-print(print_numbers("Texto100", "Texto200")) # Debe retornar la cantidad de números que no son divisibles por 3 ni por 5
-print(print_numbers("Fizz", "Buzz")) # Debe retornar la cantidad de números que no son divisibles por 3 ni por 5
-
+print_numbers("Texto100", "Texto200") 
+print_numbers("Fizz", "Buzz") 
+print(print_numbers("Texto100", "Texto200")) 
+print(print_numbers("Fizz", "Buzz")) 
 
