@@ -1,6 +1,4 @@
-Aquí tienes el código corregido:
 
-```python
 # Funciones y Alcance
 # Una función es un bloque de código que solo se ejecuta cuando se llama y se puede reutilizar en cualquier parte del programa cada vez que se llame.
 
@@ -183,5 +181,9 @@ def print_numbers(text1, text2) -> int:
 print_numbers("Texto100", "Texto200") 
 print_numbers("Fizz", "Buzz") 
 print(print_numbers("Texto100", "Texto200")) 
-print(print_numbers("Fizz", "Buzz")) 
-```
+print(print_numbers("Fizz", "Buzz"))
+
+
+# 28042028 01:45:19
+
+
